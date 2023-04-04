@@ -23,6 +23,8 @@ struct lista{
 typedef struct lista Tabela;
 
 Tabela* t;
+char *codigo;
+int pos;
 
 #define TRUE 1
 #define FALSE 0
@@ -40,6 +42,13 @@ Tabela* t;
 //Pontuacao
 #define PARESQ 0
 #define PARDIR 1
+
+void inicializa_analise(char *prog){
+    codigo=prog;
+    tamanho = strlen(codigo);
+    pos = 0;
+
+}
 
 Tabela* cria(void){
     return NULL;
